@@ -48,7 +48,8 @@ A) Scope for testing the codes. Known to be SEO friendly. Reusable components an
 <hr/>
 6) What is `React.createClass` ?  
 A) `React.createClass` allows us to generate component classes. It is like using custom JavaScript class system. We can also implement component classes with ES6 (it is native approach)  
-<b> React.createClass approach: </b>  
+<b> React.createClass approach: </b>
+<br/>  
   ```javascript
   import React from 'react';
   const Contacts = React.createClass({
