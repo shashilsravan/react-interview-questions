@@ -31,16 +31,16 @@ A) Scope for testing the codes. Known to be SEO friendly. Reusable components an
 A) JSX is a syntax extension of JavaScript. It produces React Elements. You can also embed javascript expressions in JSX. 
 Example: <br />
   ```jsx harmony
-    class App extends React.Component {
-      render() {
-        return(
-          <div>
-            <h1>{'Welcome to React world!'}</h1>
-          </div>
-        )
-      }
+  class App extends React.Component {
+    render() {
+      return(
+        <div>
+          <h1>{'Welcome to React world!'}</h1>
+        </div>
+      )
     }
-   ```
+ }
+ ```
     
 <br />
 <hr/>
