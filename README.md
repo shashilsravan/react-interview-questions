@@ -18,18 +18,21 @@
 1. What is React ?  <br />
 A) React is an open-sourced Javascript Library (frontend) created by J. Walke, React was first deployed on FB in 2011 and on Instagram in 2012. ReactJS is used for building user interfaces especially for single page applications.It follows the component-based approach in building reusable UI Components. It is used to handle view layer for web apps.
 <hr/>
+
 2. What are the features of React ?  <br />
 A) ReactJS uses re-useable UI Components to develop the view, It supports Server Side rendering. It uses virtualDOM. It uses JSX and One-way Data binding.
 <hr/>
+
 3. How React works?  <br />
 A) React creates a virtual DOM and when a state changes in a react component it runs a "diffig" algorithm to know what has changed in the virtual DOM. And then it updates the DOM with the resulted difference (which is known as reconciliation)
 <hr/>
-4) What are the advantages of React?  <br />
+
+4. What are the advantages of React?  <br />
 A) Scope for testing the codes. Known to be SEO friendly. Reusable components and Performance enhancement
 <hr/>
 
-5) What is JSX ?
-    *JSX* is a XML-like syntax extension to ECMAScript (the acronym stands for *JavaScript XML*). Basically it just provides syntactic sugar for the `React.createElement()` function, giving us expressiveness of JavaScript along with HTML like template syntax.
+5. What is JSX ?  
+A) JSX is a syntax extension to JavaScript and comes with the full power of JavaScript. JSX produces React “elements”. You can embed any JavaScript expression in JSX by wrapping it in curly braces  
 
     In the example below text inside `<h1>` tag is returned as JavaScript function to the render function.
 
