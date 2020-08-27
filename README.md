@@ -48,7 +48,7 @@ A) JSX is a syntax extension to JavaScript and comes with the full power of Java
     }
     ```
 <hr/>
-6. What is `React.createClass`?  
+6. What is `React.createClass`? <br>
 A) `React.createClass` allows us to generate component classes. It is like using custom JavaScript class system. We can also implement component classes with ES6 (it is native approach) <br>
 <b> React.createClass approach: </b>
 
