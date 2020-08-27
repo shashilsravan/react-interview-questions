@@ -28,19 +28,20 @@ A) React creates a virtual DOM and when a state changes in a react component it 
 A) Scope for testing the codes. Known to be SEO friendly. Reusable components and Performance enhancement
 <hr/>
 5) What is JSX ?  <br />
-A) JSX is a syntax extension of JavaScript. It produces React Elements. You can also embed javascript expressions in JSX. 
-Example: <br />
-  ```jsx harmony
-  class App extends React.Component {
-    render() {
-      return(
-        <div>
-          <h1>{'Welcome to React world!'}</h1>
-        </div>
-      )
+    *JSX* is a XML-like syntax extension to ECMAScript (the acronym stands for *JavaScript XML*). Basically it just provides syntactic sugar for the `React.createElement()` function, giving us expressiveness of JavaScript along with HTML like template syntax.
+
+    In the example below text inside `<h1>` tag is returned as JavaScript function to the render function.
+
+    ```jsx harmony
+    class App extends React.Component {
+      render() {
+        return(
+          <div>
+            <h1>{'Welcome to React world!'}</h1>
+          </div>
+        )
+      }
     }
- }
- ```
     
 <br />
 <hr/>
