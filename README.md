@@ -46,9 +46,9 @@ A) Scope for testing the codes. Known to be SEO friendly. Reusable components an
     
 <br />
 <hr/>
-6) What is `React.createClass` ?  <br />
+6) What is `React.createClass` ? 
 A) `React.createClass` allows us to generate component classes. It is like using custom JavaScript class system. We can also implement component classes with ES6 (it is native approach)  
-<b> React.createClass approach: </b> <br />
+<b> React.createClass approach: </b> 
   ```javascript
   import React from 'react';
   const Contacts = React.createClass({
@@ -61,7 +61,7 @@ A) `React.createClass` allows us to generate component classes. It is like using
 export default Contacts;
   ```
 <br />
-<b> using ES6 approach: </b> <br />
+<b> using ES6 approach: </b>
   ```javascript
   import React from 'react';
   class Contacts extends React.Component{
@@ -78,9 +78,9 @@ export default Contacts;
   ``` 
 <br />
 <hr/>
-7. What is the difference between element and component?  <br />
+7. What is the difference between element and component?
 A) Element is the plain object describing what you want to appear on the screen. Element can contain other elements in their props.  
-<b> Creating a react element </b> <br />
+<b> Creating a react element </b> 
   ```javascript
   const element = React.createElement(
     'h1',
@@ -88,14 +88,14 @@ A) Element is the plain object describing what you want to appear on the screen.
     'Hello world !'
   );
   ```
-<br />
-<i> When it renders it will be like in `ReactDOM.render()` </i> <br />
+
+<i> When it renders it will be like in `ReactDOM.render()` </i> 
   ```html
   <h1 class='greeting'> Hello world </h1>
   ```  
-<br />
+
 Whereas component can be declared in several ways. A component can be a class with `render()` method. It takes props as input and produces JSX tree as an output
-<b> Example </b> <br />
+<b> Example </b>
   ```javascript
   const Button = ({ onLoggedIn }) =>
     <div id={'btn'} onClick={onLoggedIn}> Login </div>
