@@ -27,7 +27,8 @@ A) React creates a virtual DOM and when a state changes in a react component it 
 4) What are the advantages of React?  <br />
 A) Scope for testing the codes. Known to be SEO friendly. Reusable components and Performance enhancement
 <hr/>
-5) What is JSX ?  <br />
+
+5) What is JSX ?
     *JSX* is a XML-like syntax extension to ECMAScript (the acronym stands for *JavaScript XML*). Basically it just provides syntactic sugar for the `React.createElement()` function, giving us expressiveness of JavaScript along with HTML like template syntax.
 
     In the example below text inside `<h1>` tag is returned as JavaScript function to the render function.
