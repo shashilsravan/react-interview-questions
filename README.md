@@ -85,13 +85,11 @@ export default Contacts;
 A) Element is the plain object describing what you want to appear on the screen. Element can contain other elements in their props. <br>
 <b> Creating a react element </b>  
 <br>
-```javascript  
-  const element = React.createElement(  
-    'h1',  
-    {'className':'greeting'},  
-    'Hello world !'  
-  );  
-```  
+  ```javascript
+  const Button = ({ onLoggedIn }) =>
+    <div id={'btn'} onClick={onLoggedIn}> Login </div>
+  ```
+ 
 
 <i> When it renders it will be like in `ReactDOM.render()` </i> 
   ```html
