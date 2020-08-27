@@ -92,12 +92,12 @@ A) Element is the plain object describing what you want to appear on the screen.
     'Hello world !'
   );
   ```  
-<br>
+
 <i> When it renders it will be like in `ReactDOM.render()` </i> 
   ```html
   <h1 class='greeting'> Hello world </h1>
   ```  
-<br>
+
 Whereas component can be declared in several ways. A component can be a class with `render()` method. It takes props as input and produces JSX tree as an output
 <b> Example </b>
   ```javascript
@@ -105,4 +105,4 @@ Whereas component can be declared in several ways. A component can be a class wi
     <div id={'btn'} onClick={onLoggedIn}> Login </div>
   ```
 
-<br />
+
