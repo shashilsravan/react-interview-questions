@@ -31,17 +31,72 @@ A) Scope for testing the codes. Known to be SEO friendly. Reusable components an
 A) JSX is a syntax extension of JavaScript. It produces React Elements. You can also embed javascript expressions in JSX. 
 Example: <br />
   ```jsx harmony
-  class App extends React.Component{
-    const title = 'Hello world!';
-    render() {
-      return(
-        <div>
-          <h1>{title}</h1>
-        </div>
-      )
+    class App extends React.Component {
+      render() {
+        return(
+          <div>
+            <h1>{'Welcome to React world!'}</h1>
+          </div>
+        )
+      }
     }
-  }
-  ```
+   ```
+    
 <br />
 <hr/>
+6) What is `React.createClass` ?  <br />
+A) `React.createClass` allows us to generate component classes. It is like using custom JavaScript class system. We can also implement component classes with ES6 (it is native approach)  
+<b> React.createClass approach: </b> <br />
+  ```javascript
+  import React from 'react';
+  const Contacts = React.createClass({
+    render(){
+      return(
+        <div> Hello </div>
+      );
+    }
+  });
+export default Contacts;
+  ```
+<br />
+<b> using ES6 approach: </b> <br />
+  ```javascript
+  import React from 'react';
+  class Contacts extends React.Component{
+    constructor(props){
+      super(props)
+    }
+    render(){
+      return(
+        <div> Hello </div>
+      );
+    }
+  }
+  export default Contacts;
+  ``` 
+<br />
+<hr/>
+7. What is the difference between element and component?  <br />
+A) Element is the plain object describing what you want to appear on the screen. Element can contain other elements in their props.  
+<b> Creating a react element </b> <br />
+  ```javascript
+  const element = React.createElement(
+    'h1',
+    {'className':'greeting'},
+    'Hello world !'
+  );
+  ```
+<br />
+<i> When it renders it will be like in `ReactDOM.render()` </i> <br />
+  ```html
+  <h1 class='greeting'> Hello world </h1>
+  ```  
+<br />
+Whereas component can be declared in several ways. A component can be a class with `render()` method. It takes props as input and produces JSX tree as an output
+<b> Example </b> <br />
+  ```javascript
+  const Button = ({ onLoggedIn }) =>
+    <div id={'btn'} onClick={onLoggedIn}> Login </div>
+  ```
+
 <br />
