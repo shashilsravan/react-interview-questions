@@ -108,4 +108,4 @@ Whereas component can be declared in several ways. A component can be a class wi
     <div id={'btn'} onClick={onLoggedIn}> Login </div>
   ```
 
-
+<hr />
