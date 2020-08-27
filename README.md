@@ -83,7 +83,10 @@ export default Contacts;
 7. What is the difference between element and component?  
 <br>
 A) Element is the plain object describing what you want to appear on the screen. Element can contain other elements in their props. <br>
-<b> Creating a react element </b>  
+<b> Creating a react element </b>
+  
+    
+      
 ```javascript  
   const element = React.createElement(  
     'h1',  
