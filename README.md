@@ -46,6 +46,7 @@ A) JSX is a syntax extension to JavaScript and comes with the full power of Java
         )
       }
     }
+   ```
     
 <hr/>
 6) What is `React.createClass` ?  
