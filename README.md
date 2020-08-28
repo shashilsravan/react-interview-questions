@@ -13,6 +13,8 @@
   <li> What is the difference between element and component? </li>
   <li> What are the types of Components in React? </li>
   <li> What is ReactDOM and what is the difference between ReactDOM and React ? </li>
+  <li> What are the differences between a class component and a functional component ? </li>
+  <li> What are Pure Components? </li>
 </ol>
 
 ## Questions with Answers 
@@ -138,5 +140,17 @@ class Navbar extends React.Component {
 
 9. What is `ReactDOM` and what is the difference between `ReactDOM` and `React` ?  
 A) As the name implies, `ReactDOM` is the glue between React and DOM. Often, we will only use it for one thing: mounting with `ReactDOM` . We can also use it to gain direct access to a DOM element by using `ReactDOM.findDOMNode()`. We use `React` to define and create our elements, for lifecycle hooks, etc
+
+<hr />
+
+10. What are the differences between a class component and a functional component ?  
+A) Class components allows us to use additional features such as local state and lifecycle hooks. Also, to enable our component to have direct access to our store and thus holds state.
+When our component just receives props and renders them to the page, this is a ‘stateless component’, for which a pure function can be used. These are also called dumb components or presentational components. So, If the component needs state or lifecycle methods then use class component otherwise use function component.
+However with the addition of React Hooks, you could also use state and lifecycle methods in your functional component too
+
+<hr />
+
+11. What are Pure Components?  
+A) `React.PureComponent` is exactly same as `React.Component` except that it handles the `shouldComponentUpdate()` method for you. When props or state changes, PureComponent will do a shallow comparison on both props and state. Components on the other hand won't compare current props and state to next out of the boxThus, the component will re-render by default whenever `shouldComponentUpdate` is called.
 
 <hr />
