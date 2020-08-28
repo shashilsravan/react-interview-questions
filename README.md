@@ -15,6 +15,7 @@
   <li> What is ReactDOM and what is the difference between ReactDOM and React ? </li>
   <li> What are the differences between a class component and a functional component ? </li>
   <li> What are Pure Components? </li>
+  <li> What is VirtualDOM and how does it work?  </li>
 </ol>
 
 ## Questions with Answers 
@@ -151,6 +152,12 @@ However with the addition of React Hooks, you could also use state and lifecycle
 <hr />
 
 11. What are Pure Components?  
-A) `React.PureComponent` is exactly same as `React.Component` except that it handles the `shouldComponentUpdate()` method for you. When props or state changes, PureComponent will do a shallow comparison on both props and state. Components on the other hand won't compare current props and state to next out of the boxThus, the component will re-render by default whenever `shouldComponentUpdate` is called.
+A) `React.PureComponent` is exactly same as `React.Component` except that it handles the `shouldComponentUpdate()` method for you. When props or state changes, PureComponent will do a shallow comparison on both props and state. Components on the other hand won't compare current props and state to next out of the box. Thus, the component will re-render by default whenever `shouldComponentUpdate` is called.
+
+<hr />
+
+12. What is VirtualDOM and how does it work?  
+A) It is like an intermediary step between the render function being called and displaying elements on the screen. The render function creates a node tree of the React components and then updates this node tree in response to the mutations in the data model caused by various actions done by the user or by the system.
+Whenever any data changes in the React App, the entire UI is re-rendered in Virtual DOM representation. Now, the difference between the previous DOM representation and the new DOM is calculated. Once the calculations are completed, the real DOM updated with only those things which are changed.
 
 <hr />
