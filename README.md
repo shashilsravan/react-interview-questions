@@ -9,10 +9,10 @@
   <li> How React works? </li>
   <li> What are the advantages of React? </li>
   <li> What is JSX ? </li>
-  <li> What is `React.createClass` ? </li>
+  <li> What is React.createClass ? </li>
   <li> What is the difference between element and component? </li>
   <li> What are the types of Components in React? </li>
-  <li> What is `ReactDOM` and what is the difference between `ReactDOM` and `React` ? </li>
+  <li> What is ReactDOM and what is the difference between ReactDOM and React ? </li>
 </ol>
 
 ## Questions with Answers 
@@ -134,4 +134,9 @@ class Navbar extends React.Component {
   }
 }
 ```
+<hr />
+
+9. What is `ReactDOM` and what is the difference between `ReactDOM` and `React` ? 
+A) As the name implies, `ReactDOM` is the glue between React and DOM. Often, we will only use it for one thing: mounting with `ReactDOM` . We can also use it to gain direct access to a DOM element by using `ReactDOM.findDOMNode()`. We use `React` to define and create our elements, for lifecycle hooks, etc
+
 <hr />
