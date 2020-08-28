@@ -11,6 +11,7 @@
   <li> What is JSX ? </li>
   <li> What is React.createClass ? </li>
   <li> What is the difference between element and component? </li>
+  <li> What are the types of Components in React? </li>
 </ol>
 
 ## Questions with Answers 
@@ -108,4 +109,28 @@ Whereas component can be declared in several ways. A component can be a class wi
     <div id={'btn'} onClick={onLoggedIn}> Login </div>
   ```
 
+<hr />
+
+8. What are the types of Components in React? 
+A) There are two types of components <u> Class based Component </u> and <u> Function based components </u> 
+<b> Function based Components: </b> This is the simplest way to create a component Those are pure JavaScript functions that accept props object as first parameter and return React elements: 
+```javascript
+function Navbar(props) {
+  return <nav> { props.title }</nav>
+}
+``` 
+<b> Class based components: </b> You can also use ES6 class to define a component. The above function component can be written as: 
+```javascript
+class Navbar extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      title: props.title;
+    }
+  }
+  render() {
+    return <h1>{`Hello, ${this.state.title}`}</h1>
+  }
+}
+```
 <hr />
