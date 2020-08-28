@@ -9,9 +9,10 @@
   <li> How React works? </li>
   <li> What are the advantages of React? </li>
   <li> What is JSX ? </li>
-  <li> What is React.createClass ? </li>
+  <li> What is `React.createClass` ? </li>
   <li> What is the difference between element and component? </li>
   <li> What are the types of Components in React? </li>
+  <li> What is `ReactDOM` and what is the difference between `ReactDOM` and `React` ? </li>
 </ol>
 
 ## Questions with Answers 
