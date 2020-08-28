@@ -16,6 +16,10 @@
   <li> What are the differences between a class component and a functional component ? </li>
   <li> What are Pure Components? </li>
   <li> What is VirtualDOM and how does it work?  </li>
+  <li> What is state in React? </li>
+  <li> What are props in React? </li>
+  <li>What happen if we update state directly?  </li>
+  <li> Explain the purpose of render() in React </li>
 </ol>
 
 ## Questions with Answers 
@@ -159,5 +163,66 @@ A) `React.PureComponent` is exactly same as `React.Component` except that it han
 12. What is VirtualDOM and how does it work?  
 A) It is like an intermediary step between the render function being called and displaying elements on the screen. The render function creates a node tree of the React components and then updates this node tree in response to the mutations in the data model caused by various actions done by the user or by the system.
 Whenever any data changes in the React App, the entire UI is re-rendered in Virtual DOM representation. Now, the difference between the previous DOM representation and the new DOM is calculated. Once the calculations are completed, the real DOM updated with only those things which are changed.
+
+<hr />
+
+13. What is state in React?  
+A) State of a component is an object that holds some information that may change over the lifetime of the component. We should always try to make our state as simple as possible and minimize the number of stateful components.  
+<b>Example: </b>
+```javascript
+class Navbar extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      title: 'SS'
+    }
+  }
+
+  render() {
+    return (
+      <nav>
+        <h1>{this.state.title}</h1>
+      </nav>
+    )
+  }
+}
+```
+
+And state is similar to props, but it is private and fully controlled by the component i.e., it is not accessible to any component other than one that owns and sets it. 
+<hr />
+
+14. What are props in React?  
+A) props are inputs to component. They are data passed down from a parent component to a child component. They are single values or objects containing a set of values that are passed to components on creation using a naming convention similar to html tag attributes. 
+
+```html
+<Greet content = 'Hello world!'>
+```
+
+```javascript
+function Greet(props){
+    return(
+        <div>
+            <h1> {props.content} </h1>
+        </div>
+    )
+}
+export default Greet;
+```
+<hr />
+
+15. What happen if we update state directly?  
+A) If we update the state directly it won't re-render the component
+
+So we use `setState()` method.   
+Syntax is:
+```javascript
+this.setState({
+    title: 'New title'
+})
+```
+<hr />
+
+16. Explain the purpose of `render()` in React?  
+A) It is mandatory for each React component to have a render() function. Render function is used to return the HTML which you want to display in a component. If you need to rendered more than one HTML element, you need to grouped together inside single enclosing tag (parent tag) such as ```<div> or <form> or <group> ```etc.
 
 <hr />
